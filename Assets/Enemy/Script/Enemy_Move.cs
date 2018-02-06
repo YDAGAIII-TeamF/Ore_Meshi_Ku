@@ -12,6 +12,7 @@ namespace MeshiScript
 
         void Start()
         {
+            target = GameObject.FindGameObjectWithTag("Player").transform;
             agent = GetComponent<NavMeshAgent>();
         }
 
