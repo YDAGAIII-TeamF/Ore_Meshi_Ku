@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
-
 namespace MeshiScript
 {
-    public class enemy_move : MonoBehaviour
+    /// <summary>
+    /// 敵の動き(ナビメッシュエージェント)
+    /// </summary>
+    public class Enemy_Move : MonoBehaviour
     {
-
-        public Transform target;
+        public Transform target; //追いかけるオブジェクト
         NavMeshAgent agent;
 
         void Start()
@@ -14,11 +15,9 @@ namespace MeshiScript
             agent = GetComponent<NavMeshAgent>();
         }
 
-        void Update()
+        void FixedUpdate()
         {
-
             agent.SetDestination(target.position);
-
         }
     }
 }
