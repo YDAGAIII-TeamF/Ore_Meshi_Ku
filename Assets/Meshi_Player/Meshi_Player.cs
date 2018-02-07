@@ -10,7 +10,7 @@ namespace MeshiScript
         // Use this for initialization
         void Start()
         {
-            rigidBody = GetComponent<Rigidbody>();
+            RigidBody = GetComponent<Rigidbody>();
         }
 
         // Update is called once per frame
