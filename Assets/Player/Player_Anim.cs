@@ -17,10 +17,10 @@ namespace MeshiScript
         void Update()
         {
             Move = 0;
-            if (Input.GetKey(KeyCode.UpArrow)) Move = 1;
-            if (Input.GetKey(KeyCode.DownArrow)) Move = 2;
-            if (Input.GetKey(KeyCode.LeftArrow)) Move = 3;
-            if (Input.GetKey(KeyCode.RightArrow)) Move = 4;
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) Move = 1;
+            if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) Move = 2;
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) Move = 3;
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) Move = 4;
 
 
             switch (Move)

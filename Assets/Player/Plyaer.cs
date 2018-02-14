@@ -17,7 +17,7 @@ namespace MeshiScript
 
         void Update()
         {
-
+            Player_Move();
         }
 
         protected void Player_Move(){
