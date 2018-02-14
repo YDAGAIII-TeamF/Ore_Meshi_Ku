@@ -4,19 +4,19 @@ using UnityEngine;
 
 namespace MeshiScript
 {
-    public class Meshi_Player : MonoBehaviour
+    public class Meshi_Player : Plyaer
     {
 
         // Use this for initialization
         void Start()
         {
-
+            RigidBody = GetComponent<Rigidbody>();
         }
 
         // Update is called once per frame
         void Update()
         {
-            
+            Player_Move();
         }
     }
 }
